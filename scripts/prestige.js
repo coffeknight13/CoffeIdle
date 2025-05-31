@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (prestigeCount < firstPrestigeCosts.length) {
             return firstPrestigeCosts[prestigeCount];
         } else {
-            return 1e39;
+            return 1e40;
         }
     }
 
