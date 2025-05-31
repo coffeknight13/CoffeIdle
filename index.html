@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Idle</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/settings.css">
+    <link rel="stylesheet" href="style/prestige.css">
+    <link rel="stylesheet" href="style/prestigeUpgrade.css">
+</head>
+<body>
+    <img src="img/logo.png" alt="Іконка сторінки" class="page-icon">
+    <audio id="clickSound" src="sounds/button_click.mp3"></audio>
+    <audio id="track1" src="sounds/01SorePoint.mp3" loop></audio>
+    <audio id="track2" src="sounds/04ShockTherapy.mp3" loop></audio>
+    <audio id="track3" src="sounds/10TarenLever.mp3" loop></audio>
+    <audio id="track4" src="sounds/20DragonAtlas.mp3" loop></audio>
+    <audio id="track5" src="sounds/26MegaMan2.mp3" loop></audio>
+    <audio id="track6" src="sounds/27ScissorsMix.mp3" loop></audio>
+    <audio id="track7" src="sounds/31UnreeealSuperhero3.mp3" loop></audio>
+    <audio id="track8" src="sounds/38SoClose.mp3" loop></audio>
+    <audio id="track9" src="sounds/39BlankPage.mp3" loop></audio>
+
+    <div class="top-left-container">
+        <span class="upper-text">Coffe Idle</span>
+        <img src="img/coin.png" alt="coin" class="upper-icon">
+        <span class="upper-text">0</span>
+        <img src="img/prestige_point.png" alt="prestige" class="upper-icon">
+        <span class="upper-text">0</span>
+        <img src="img/all_prestige.png" alt="allprestige" class="upper-icon">
+        <span class="upper-text">0</span>
+    </div>
+
+    <div class="top-right-container">
+        <button class="help-button">
+            <img src="img/help.png" alt="Допомога" />
+        </button>
+        <button class="button">Список лідерів</button>
+        <button class="button">Вхід/Реєстрація</button>
+    </div>
+
+
+    <div class="bottom-left-container">
+        <button class="button" id="prestigeButtonMain">Престиж</button>
+        <button class="button" id="upgradesTreeButton">Дерево покращень</button>
+    </div>
+
+       <div class="bottom-right-container">
+        <button class="button" id="playMusicButton">Відтворити музику</button>
+        <button class="button">Налаштування</button>
+    </div>
+
+    <div class="game-container">
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Bicerin.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Bicerin</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">10</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Morocchino.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Morocchino</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">100</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Glace.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Glace</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">1000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/MeadRaf.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">MeadRaf</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">10000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Romano.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Romano</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">100000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/RafCoffe.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">RafCoffe</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">1000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Fredo.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Fredo</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">10000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/LatteMacchiato.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">LatteMacchiato</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">100000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Breve.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Breve</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">1000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/ConPanna.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">ConPanna</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">10000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Latte.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Latte</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">100000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Macchiato.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Macchiato</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">1000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Cappuccino.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Cappuccino</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">10000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/FlatWhite.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">FlatWhite</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">100000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Americano.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Americano</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">1000000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Lungo.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Lungo</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">10000000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Ritretto.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Ritretto</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">100000000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Tripplo.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Tripplo</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">1000000000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Doppio.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Doppio</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">10000000000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+
+        <div class="inner-container">
+            <img src="img/TypeCoffe/Espresso.png" alt="Логотип" class="inner-icon logo">
+            <div class="text-container">
+                <span class="inner-text item-name">Espresso</span> <span class="inner-text item-level">(Рівень 0/500)</span>
+                <span class="inner-text framed-text item-price">100000000000000000000</span> <span class="inner-text framed-text"></span>
+                <span class="inner-text production-rate">0.0 / с</span>
+            </div>
+            <button class="inner-button item-upgrade">Покращити</button>
+        </div>
+    </div>
+
+
+   <div class="settings-menu">
+        <h3>Налаштування</h3>
+        <div class="setting-item">
+            <label for="musicVolume">Гучність музики:</label>
+            <input type="range" id="musicVolume" min="0" max="1" step="0.01" value="1">
+            <span id="musicVolumeValue">100%</span>
+        </div>
+        <div class="setting-item">
+            <label for="soundVolume">Гучність звуку:</label>
+            <input type="range" id="soundVolume" min="0" max="1" step="0.01" value="1">
+            <span id="soundVolumeValue">100%</span>
+        </div>
+        <button id="closeSettings" class="button">Закрити</button>
+    </div>
+
+    <div id="prestigeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Престиж</h2>
+            <p>Потрібна вартість: <span id="prestigeCost"></span></p>
+            <button id="prestigeButton">Престиж</button>
+        </div>
+    </div>
+
+    <div id="upgradesTreeContainer" class="upgrades-tree-container">
+        <h2>Дерево покращень</h2>
+        <button id="closeUpgradesTree" class="close-button">X</button>
+        <div id="upgradesListInner">
+            </div>
+        <div id="upgradeDescriptionContainer"></div>
+    </div>
+
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 class="modal-title">Допомога</h2>
+                <p>
+                    <img src="img/coin.png" alt="Іконка збереження" class="upper-icon"> - це ваша кількість монет на які ви можете придбати покращення. При накопичуванні достатньої кількості монет ви можете зробити престиж. 
+                </p>
+
+                 <p>
+                    <img src="img/prestige_point.png" alt="Іконка престижу" class="upper-icon"> - це очки престижу які є валюта для придбання покращень у дереві покращень. Їх можна отримати, зробивши престиж.
+                </p>
+
+                <p>
+                    <img src="img/all_prestige.png" alt="Іконка дерева покращень" class="upper-icon"> - це ваша загальна кількість престижів. Чим у вас їх більше, тим вище ви у списку лідерів. 
+                </p>
+        </div>
+    </div>
+
+    <script src="scripts/playerData.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/settings.js"></script>
+    <script src="scripts/sounds.js"></script>
+    <script src="scripts/upgrades.js"></script>
+    <script src="scripts/prestige.js"></script>
+    <script src="scripts/prestigeUpgradeData.js"></script>
+    <script src="scripts/prestigeUpgrade.js"></script>
+    <script src="scripts/prestigeUpgradeType.js"></script>
+    <script src="scripts/help.js"></script>
+    <script src="scripts/auth.js"></script>
+
+</body>
+</html>
