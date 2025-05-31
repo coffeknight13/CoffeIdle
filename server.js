@@ -10,13 +10,13 @@ const port = 3000;
 const dbConfigRoot = {
     host: 'localhost',
     user: 'root',
-    password: '2910010Ck'
+    password: 'pass'
 };
 
 const dbConfigApp = {
     host: 'localhost',
     user: 'root',
-    password: '2910010Ck',
+    password: 'pass',
     database: 'CoffeIdleDB'
 };
 
