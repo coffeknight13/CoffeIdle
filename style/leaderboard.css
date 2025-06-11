@@ -1,0 +1,42 @@
+.leaderboard-content {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+}
+
+.leaderboard-content ol.leaderboard-list {
+    padding-left: 20px;
+    list-style-position: outside;
+    margin: 0;
+    text-align: left;
+}
+
+.leaderboard-content li.leaderboard-item {
+    padding: 8px 0;
+    border-bottom: 1px dotted black;
+    font-size: 1.1em;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+
+.leaderboard-content li.leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+.leaderboard-content li.leaderboard-item .prestige-level {
+    margin-left: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.modal-content h2 {
+    text-align: center;
+}

@@ -1,0 +1,148 @@
+.login-register-modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.login-register-modal-content {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid black;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px black;
+    position: relative;
+    color: gray;
+    animation-name: fadeInScale;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.login-register-modal-title {
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.login-register-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: black;
+}
+
+/* Поля ввода */
+.login-register-modal-body input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.login-register-modal-body input::placeholder {
+    color: gray;
+}
+
+.login-register-modal-body input:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: 0 0 0 2px black;
+}
+
+.login-register-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.login-register-btn {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Стиль для кнопки "Увійти" */
+#loginBtn {
+    background-color: blue;
+    color: white;
+}
+
+#loginBtn:hover {
+    background-color: darkblue;
+    transform: translateY(-1px);
+}
+
+/* Стиль для кнопки "Зареєструватися" */
+#registerBtn {
+    background-color: limegreen;
+    color: white;
+}
+
+#registerBtn:hover {
+    background-color: green;
+    transform: translateY(-1px);
+}
+
+/* Кнопка закрытия (X) */
+.login-register-close-button {
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.login-register-close-button:hover,
+.login-register-close-button:focus {
+    color: gray;
+    text-decoration: none;
+}
+
+/* Повідомлення про помилках/успіху */
+.login-register-messages {
+    color: red; /* Червоний для помилок */
+    font-size: 0.9em;
+    text-align: center;
+    min-height: 1.2em;
+}
+.login-register-messages.success {
+    color: limegreen; /* Зелений для успіху */
+}
